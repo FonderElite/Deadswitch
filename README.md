@@ -46,3 +46,6 @@ DeadSwitch requires the BeautifulSoup library and requests, installation below
 
 # Update:
 * No New Updates at the moment.
+# Socials:
+* Github: https://github.com/FonderElite
+* Twitter: https://twitter.com/elitefonder
