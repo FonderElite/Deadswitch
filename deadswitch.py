@@ -1,11 +1,9 @@
 import colorama
 from colorama import Fore
-import signal
 import time
 import sys
 import platform
 import  requests
-import re
 from bs4 import BeautifulSoup as soup
 wi="\033[1;37m" #>>White#
 rd="\033[1;31m" #>Red   #
