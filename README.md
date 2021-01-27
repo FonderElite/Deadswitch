@@ -1,4 +1,4 @@
-# Hasher
+# Dead-Switch
 ## Coded By FonderElite
 <pre style="color:cyan">
 =========================
