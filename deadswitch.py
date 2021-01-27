@@ -22,7 +22,7 @@ banner = print(wi + gr + '''
 |      |____|/          |
 =========================
 ''')
-time.sleep(2)
+time.sleep(1)
 help = print(yl + '''
 =============================================
 +|  Dead-Man's Switch By  Fonder-Elite     |+
@@ -37,7 +37,7 @@ help = print(yl + '''
 ''')
 print(wi + rd +"WARNING: This Will Delete All Your Files!")
 def sec():
-    inp = int(input("Number of Seconds:"))
+    inp = int(input(Fore.CYAN + "Number of Seconds:"))
     try:
         stop = abs(int(inp))
     except:
@@ -45,7 +45,7 @@ def sec():
     while stop > 0:
         m, s = divmod(stop, 60)
         h, m = divmod(m, 60)
-        timeleft = str(h).zfill(2) + ":" + str(m).zfill(2) + ":" + str(s).zfill(2)
+        timeleft = Fore.RED +  str(h).zfill(2) + ":" + str(m).zfill(2) + ":" + str(s).zfill(2)
         print("\r", end=timeleft)
         time.sleep(1)
         stop -= 1
@@ -125,4 +125,3 @@ c_c__/-c____/
  ╩ ┴└─ ┴   ┴ ┴└─┘┴ ┴┴┘└┘o ''')
 # disable the alarm if not wanted any longer
 # signal.alarm(0)
-
