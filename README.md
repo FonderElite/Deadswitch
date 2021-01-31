@@ -11,7 +11,7 @@
 |      |____|/          |
 =========================
      </pre>
-
+<span style="color:blue">some *blue* text</span>.
 
 About: Dead-Man's Switch That Deletes Your Files!<br>
 Platform: Works on Windows & Linux<br>
