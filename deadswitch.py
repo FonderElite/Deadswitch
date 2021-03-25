@@ -36,7 +36,7 @@ help = print(yl + '''
 +|Ex. ./deadswitch -d -s                   |+
 +|=========================================|+
 ''')
-print(wi + rd +"WARNING: This Will Delete All Your Files!")
+print(wi + rd +"WARNING:" + wi  + "This Will Delete All Your Files!")
 def sec():
     inp = int(input(Fore.CYAN + "Number of Seconds:" + wi))
     try:
@@ -46,7 +46,7 @@ def sec():
     while stop > 0:
         m, s = divmod(stop, 60)
         h, m = divmod(m, 60)
-        timeleft = Fore.RED +  str(h).zfill(2) + ":" + str(m).zfill(2) + ":" + str(s).zfill(2)
+        timeleft = wi + rd + "Time-Remaing: " + wi + str(h).zfill(2) + ":" + str(m).zfill(2) + ":" + str(s).zfill(2)
         print("\r", end=timeleft)
         time.sleep(1)
         stop -= 1
@@ -66,12 +66,12 @@ def quit():
      print(Fore.CYAN + "Cancelled. \(^_^)/")
 while True:
   root = operate.getuid()
-  if root != "0":
+  if root != 0:
    print(wi + rd + '[-]' + wi + 'Please Run this script as root')
    time.sleep(1)
    print(wi + 'Terminating...')
    sys.exit()
-  command = input(wi + os + "-User: ")
+  command = input(wi + "💻" + os + "-User: ")
   if command == "./deadswitch -h":
       print(wi + yl +'''
 =============================================
