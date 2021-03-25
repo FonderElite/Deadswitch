@@ -4,6 +4,7 @@ import time
 import sys
 import platform
 import  requests
+import os as operate
 from bs4 import BeautifulSoup as soup
 wi="\033[1;37m" #>>White#
 rd="\033[1;31m" #>Red   #
@@ -37,7 +38,7 @@ help = print(yl + '''
 ''')
 print(wi + rd +"WARNING: This Will Delete All Your Files!")
 def sec():
-    inp = int(input(Fore.CYAN + "Number of Seconds:"))
+    inp = int(input(Fore.CYAN + "Number of Seconds:" + wi))
     try:
         stop = abs(int(inp))
     except:
@@ -64,6 +65,12 @@ def quit():
     elif choice == "n":
      print(Fore.CYAN + "Cancelled. \(^_^)/")
 while True:
+  root = operate.getuid()
+  if root != "0":
+   print(wi + rd + '[-]' + wi + 'Please Run this script as root')
+   time.sleep(1)
+   print(wi + 'Terminating...')
+   sys.exit()
   command = input(wi + os + "-User: ")
   if command == "./deadswitch -h":
       print(wi + yl +'''
