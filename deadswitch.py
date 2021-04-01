@@ -33,7 +33,7 @@ help = print(yl + '''
 +|      -s          Start                  |+
 +|      -u          Update                 |+
 +|      -q          Quit                   |+
-+|Ex.      ./ds -d -s                      |+
++|Ex.     ./ds -d -s (Delete All Files)    |+
 +|=========================================|+
 ''')
 print(wi + rd +"WARNING:" + wi  + "This Will Delete All Your Files!")
@@ -63,7 +63,7 @@ def quit():
      print(wi + rd +"Quitting.__(x_x)__")
      sys.exit()
     elif choice == "n":
-     print(Fore.CYAN + "Cancelled. \(^_^)/")
+     print(wi  + "Cancelled." + wi + gr + " \(^_^)/")
 def checkuid():
   print(wi + yl + '[!]' + wi + 'Checking if user is root...')
   time.sleep(1)
@@ -92,7 +92,7 @@ while True:
 +|      -s          Start                  |+
 +|      -u          Update                 |+
 +|      -q          Quit                   |+
-+|Ex.     ./ds -d -s                       |+
++|Ex.     ./ds -d -s (Delete All Files)    |+
 +|=========================================|+
       ''')
   elif command == "./ds":
@@ -105,7 +105,7 @@ while True:
 +|      -s          Start                  |+
 +|      -u          Update                 |+
 +|      -q          Quit                   |+
-+|Ex.    ./ds -d -s                        |+
++|Ex.     ./ds -d -s (Delete All Files)    |+
 +|=========================================|+
       ''')
   elif command == "./ds -u":
@@ -117,7 +117,7 @@ while True:
     print("Checking last commit date...")
     time.sleep(2)
     if dte != "19 hours ago":
-        print("New Commit! kindly check:https://github.com/FonderElite/Deadswitch")
+        print(wi + gr + "[+]" + wi + "New Commit! kindly check: https://github.com/FonderElite/Deadswitch")
     else:
         print(rd + "No recent commits.")
   elif command == "./ds -s":
@@ -142,4 +142,3 @@ c_c__/-c____/
  ╩ ┴└─ ┴   ┴ ┴└─┘┴ ┴┴┘└┘o ''')
 # disable the alarm if not wanted any longer
 # signal.alarm(0)
-                    
