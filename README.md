@@ -21,7 +21,7 @@ Find More About My Projects Below<br>
 
 
 # Work flow
-=> Execute ```./deadswitch -s -d``` and specify how many seconds
+=> Execute ```./ds -s -d``` and specify how many seconds
 till deletion of your system will start.
 
 # Requirements 
