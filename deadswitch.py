@@ -33,7 +33,7 @@ help = print(yl + '''
 +|      -s          Start                  |+
 +|      -u          Update                 |+
 +|      -q          Quit                   |+
-+|Ex. ./ds -d -s                   |+
++|Ex.      ./ds -d -s                      |+
 +|=========================================|+
 ''')
 print(wi + rd +"WARNING:" + wi  + "This Will Delete All Your Files!")
