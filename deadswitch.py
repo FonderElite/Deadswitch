@@ -64,15 +64,36 @@ def quit():
      sys.exit()
     elif choice == "n":
      print(Fore.CYAN + "Cancelled. \(^_^)/")
-while True:
+def checkuid():
+  print(wi + yl + '[!]' + wi + 'Checking if user is root...')
+  time.sleep(1)
   root = operate.getuid()
-  if root != 0:
+  if root == 0:
+   print(wi + gr + '[+]' + wi + 'Suceess user is root.')
+  elif root != 0:
+   print(wi + rd + '[-]' + wi + 'User is not root!')
+   time.sleep(1)
    print(wi + rd + '[-]' + wi + 'Please Run this script as root')
    time.sleep(1)
    print(wi + 'Terminating...')
    sys.exit()
+checkuid()
+while True:
   command = input(wi + "💻" + os + "-User: ")
-  if command == "./deadswitch -h":
+  if command == "./ds -h":
+      print(wi + yl +'''
+=============================================
++|  Dead-Man's Switch By  Fonder-Elite     |+
++|-----------------------------------------|+
++|      -h          Help                   |+
++|      -d          delete                 |+
++|      -s          Start                  |+
++|      -u          Update                 |+
++|      -q          Quit                   |+
++|Ex.     ./ds -d -s                       |+
++|=========================================|+
+      ''')
+  elif command == "./ds":
       print(wi + yl +'''
 =============================================
 +|  Dead-Man's Switch By  Fonder-Elite     |+
@@ -85,20 +106,7 @@ while True:
 +|Ex. ./deadswitch -d -s                   |+
 +|=========================================|+
       ''')
-  elif command == "./deadswitch":
-      print(wi + yl +'''
-=============================================
-+|  Dead-Man's Switch By  Fonder-Elite     |+
-+|-----------------------------------------|+
-+|      -h          Help                   |+
-+|      -d          delete                 |+
-+|      -s          Start                  |+
-+|      -u          Update                 |+
-+|      -q          Quit                   |+
-+|Ex. ./deadswitch -d -s                   |+
-+|=========================================|+
-      ''')
-  elif command == "./deadswitch -u":
+  elif command == "./ds -u":
     url = 'https://github.com/FonderElite/Deadswitch'
     r = requests.get(url)
     soupi = soup(r.content, "html.parser")
@@ -110,13 +118,13 @@ while True:
         print("New Commit! kindly check:https://github.com/FonderElite/Deadswitch")
     else:
         print(rd + "No recent commits.")
-  elif command == "./deadswitch -s":
+  elif command == "./ds -s":
       sec()
-  elif command == "./deadswitch -d -s":
+  elif command == "./ds -d -s":
       sec()
-  elif command == "./deadswitch -d":
+  elif command == "./ds -d":
       sec()
-  elif command == "./deadswitch -q":
+  elif command == "./ds -q":
       quit()
   else:
     print(wi + '''
@@ -132,3 +140,4 @@ c_c__/-c____/
  ╩ ┴└─ ┴   ┴ ┴└─┘┴ ┴┴┘└┘o ''')
 # disable the alarm if not wanted any longer
 # signal.alarm(0)
+                     
