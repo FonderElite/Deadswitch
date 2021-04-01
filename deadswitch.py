@@ -105,7 +105,7 @@ while True:
 +|      -s          Start                  |+
 +|      -u          Update                 |+
 +|      -q          Quit                   |+
-+|Ex. ./deadswitch -d -s                   |+
++|Ex.    ./ds -d -s                        |+
 +|=========================================|+
       ''')
   elif command == "./ds -u":
