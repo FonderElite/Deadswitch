@@ -33,7 +33,7 @@ help = print(yl + '''
 +|      -s          Start                  |+
 +|      -u          Update                 |+
 +|      -q          Quit                   |+
-+|Ex. ./deadswitch -d -s                   |+
++|Ex. ./ds -d -s                   |+
 +|=========================================|+
 ''')
 print(wi + rd +"WARNING:" + wi  + "This Will Delete All Your Files!")
@@ -142,3 +142,4 @@ c_c__/-c____/
  ╩ ┴└─ ┴   ┴ ┴└─┘┴ ┴┴┘└┘o ''')
 # disable the alarm if not wanted any longer
 # signal.alarm(0)
+                    
