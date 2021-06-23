@@ -33,7 +33,7 @@ help = print(yl + '''
 +|      -s          Start                  |+
 +|      -u          Update                 |+
 +|      -q          Quit                   |+
-+|Ex.     ./ds -d -s (Delete All Files)    |+
++|Ex.  ds -d -s (Delete All Files)         |+
 +|=========================================|+
 ''')
 print(wi + rd +"WARNING:" + wi  + "This Will Delete All Your Files!")
@@ -81,7 +81,7 @@ def checkuid():
 checkuid()
 while True:
   command = input(wi + "💻" + os + "-User: ")
-  if command == "./ds -h":
+  if command == "ds -h":
       print(wi + yl +'''
 =============================================
 +|  Dead-Man's Switch By  Fonder-Elite     |+
@@ -94,7 +94,7 @@ while True:
 +|Ex.     ./ds -d -s (Delete All Files)    |+
 +|=========================================|+
       ''')
-  elif command == "./ds":
+  elif command == "ds":
       print(wi + yl +'''
 =============================================
 +|  Dead-Man's Switch By  Fonder-Elite     |+
@@ -107,7 +107,7 @@ while True:
 +|Ex.     ./ds -d -s (Delete All Files)    |+
 +|=========================================|+
       ''')
-  elif command == "./ds -u":
+  elif command == "ds -u":
     url = 'https://github.com/FonderElite/Deadswitch'
     r = requests.get(url)
     soupi = soup(r.content, "html.parser")
@@ -119,13 +119,13 @@ while True:
         print(wi + gr + "[+]" + wi + "New Commit! kindly check: https://github.com/FonderElite/Deadswitch")
     else:
         print(rd + "No recent commits.")
-  elif command == "./ds -s":
+  elif command == "ds -s":
       sec()
-  elif command == "./ds -d -s":
+  elif command == "ds -d -s":
       sec()
-  elif command == "./ds -d":
+  elif command == "ds -d":
       sec()
-  elif command == "./ds -q":
+  elif command == "ds -q":
       quit()
   else:
     print(wi + '''
